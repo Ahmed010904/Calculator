@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+    
+        <div id="Calculator" >
+            <input id="Input" readonly>
+            
+            <div id="Cbutt" >
+                <button id="space_cbutt" onclick="Toggle()">ON/OFF</button>
+                <button id="ref" onclick="GoToMe()">Creator</button>
+                <button id="space_cbutt" onclick="Clear()">Clear</button>
+                <button id="delete_but" onclick="Supp()" onmousedown="Delete()">Del</button>
+            </div>
+
+            <div id="keys">  
+            <button onclick="Input('7')">7</button>
+            <button onclick="Input('8')">8</button>
+            <button onclick="Input('9')">9</button>
+            <button onclick="Input('/')">/</button>
+            <button onclick="Input('4')">4</button>
+            <button onclick="Input('5')">5</button>
+            <button onclick="Input('6')">6</button>
+            <button onclick="Input('*')">*</button>
+            <button onclick="Input('1')">1</button>
+            <button onclick="Input('2')">2</button>
+            <button onclick="Input('3')">3</button>
+            <button onclick="Input('-')">-</button>
+            <button onclick="Input('0')">0</button>
+            <button onclick="Input('.')">.</button>
+            <button onclick="Calcul()">=</button>
+            <button onclick="Input('+')">+</button>    
+            </div>
+        </div>
+        
+    <script src="javascript.js"></script>
+    <script>
+        window.onload=initialise();
+    </script>
+</body>
+
+</html>
